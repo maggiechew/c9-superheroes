@@ -1,5 +1,9 @@
 import express from "express";
 import fetch from "node-fetch";
+import { config } from "dotenv";
+config();
+import mongoose from "./db/mongoose.js";
+
 const PORT = 5001;
 const app = express();
 
